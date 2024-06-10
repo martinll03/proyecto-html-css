@@ -26,7 +26,38 @@
         </ul>
     </nav>
    </header>
-  
+  <div class="contenedor-formulario">
+        <form >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre aquí" required minlength="3" >
+            
+            <label for="apellido">Nombre:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido aquí"  required minlength="3">
+            
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" placeholder="Escribe tu mail" required>
+            
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais">
+                <Option value="Guatemala">Guatemala</Option>
+                <Option value="estadosunidos">Estados Unidos</Option>
+                <Option value="elsalvador">El Salvador</Option>
+                <Option value="nicaragua">Nicaragua</Option>
+            </select>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" placeholder="Escribe aqui tu comentario"></textarea>
+            
+            <label for="motivo">Motivo de comentario:</label>
+            <input type="radio" id="motivo" name="motivo"> <i>Servicio</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Sistema</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Infraestructura</i>
+            <input type="radio" id="motivo" name="motivo"> <i>Acesoria</i>
+            <input type="submit" value="Enviar">
+        </form>
+
+  </div>
+
    <footer class="footer">
     <p>Derechos reservados &copy; 2024</p>
    </footer>
